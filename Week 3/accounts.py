@@ -5,5 +5,10 @@
 
 
 #Currently, is no limit on how many digits a user can enter, needs to be limited to 10.
+#Source : https://www.w3schools.com/python/ref_func_slice.asp
+#Source : https://realpython.com/python-f-strings/
 
-Account_Number = (input("Please enter a 10 digit account number: "))
+account_number = (input("Please enter a 10 digit account number: "))
+# Six 'x' to represent the 6 blocked numbers
+blocked_number = 'xxxxxx'
+print( blocked_number + account_number[-4:])
