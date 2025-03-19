@@ -13,16 +13,16 @@ amount2 = int(input("Enter second amount in cents : "))
 
 # Add two amounts returned by user.
 total_amount = amount1 + amount2
+
 # Convert total_amount in cents to Euro, required for final answer.
 answer = total_amount/100
 
-
-
-
-
-# f-string source : https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 # f-string used as combining integer (Answer variable) & string(€) .
-# Round fucntion used to display answer to two decimal places. Same as Microsoft excel function.
- 
+# Round fucntion used to display answer to two decimal places. Same as Microsoft excel function. 
 print(f'€{round(answer,2)}')
 
+# Sources:
+# f-string source : https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+
+#Review
+# Rounds whole number down to 1 decimal place.
