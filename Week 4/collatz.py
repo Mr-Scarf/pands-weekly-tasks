@@ -5,6 +5,8 @@
 # Have the program end if the current value is one.
 
 # Author: David Scally
+#Source : https://www.w3schools.com/python/python_conditions.asp
+#Source : https://realpython.com/python-f-strings/
 
 
 number = int(input('Please enter a positive integer: '))
