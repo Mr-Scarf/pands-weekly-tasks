@@ -7,7 +7,7 @@
 # Author: David Scally
 
 
-number = int(input('Please enter a positive integer: '))
+number = int(input('Please enter a positive integer: ')) #Prompts user to input positive integer.
 
 while number <= 0: # Condition to run when user input number is 0 or less. Prompts user to re-enter a positive integer.
     number = int(input('Not a positive integer - please enter a positive integer: '))
