@@ -6,7 +6,7 @@
 
 
 # Asking user input for 10 digit a/c number
-account_number = (input("Please enter a 10 digit account number: "))
+account_number = input("Please enter a 10 digit account number: ")
 
 # Six 'x' to represent the 6 blocked numbers
 blocked_number = 'xxxxxx'

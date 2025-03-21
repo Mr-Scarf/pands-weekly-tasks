@@ -25,4 +25,4 @@ print(f'€{round(answer,2)}')
 # f-string source : https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
 #Review
-# Rounds whole number down to 1 decimal place.
+# Rounds whole number down to 1 decimal place. https://www.w3schools.com/python/python_string_formatting.asp
