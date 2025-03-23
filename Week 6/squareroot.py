@@ -8,3 +8,17 @@
 
 
 # Author: David Scally
+
+
+def sqrt()
+
+# User input
+selection = float(input('Please enter a psotive number: '))
+
+answer = sqrt()
+print(f'The square root of {selection} is approx. {answer})
+      
+
+  # Source https://www.youtube.com/watch?v=99ABkygm2Xg&t=273s 
+  # Source https://www.geeksforgeeks.org/square-root-of-a-number-without-using-sqrt-function/
+  #     
