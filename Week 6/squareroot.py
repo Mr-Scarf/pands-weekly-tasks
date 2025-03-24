@@ -10,15 +10,23 @@
 # Author: David Scally
 
 
-def sqrt()
+def sqrt(x): #Function that is called. x = User input - 'Selection' variable.
+
+    guess = x/2   # User selection divided by 2 for ths first guess in Newton Method calculation
+    while (guess * guess -x) > .00000001 : # While loop continues to run until final 'guess' is within the tolerance level(.00000001). This leads to more accurate result.
+        guess = (guess + x /guess) / 2 # Newton Method calculation
+
+    return round(guess,5) # Input to return 'guess' from function when called. Rounded to 5 decimal places.
+
+
 
 # User input
-selection = float(input('Please enter a psotive number: '))
+selection = float(input('Please enter a positive number: '))
 
-answer = sqrt()
-print(f'The square root of {selection} is approx. {answer})
+answer = sqrt(selection)
+print(f'The square root of {selection} is approx. {answer}')
       
 
   # Source https://www.youtube.com/watch?v=99ABkygm2Xg&t=273s 
   # Source https://www.geeksforgeeks.org/square-root-of-a-number-without-using-sqrt-function/
-  #     
+  # Source https://chortle.ccsu.edu/java5/Notes/chap73/ch73_18.html  
