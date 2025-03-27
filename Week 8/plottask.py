@@ -8,30 +8,49 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-#Inputs from Instruction
+
+
+# Step 1 - Write a program called plottask.py that displays:a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2
+
+#Inputs from Instruction. Create dynamic variables, easier for code if inputs need to be updated.
 Mean = 5
 standard_deviation = 2
 number_of_values = 1000
 
-# Generate 1000 values
+# np.random.normal shows a normal distribution in format (mean,standard deviation,size), also described as (loc, scale,size)
+# Generate 1000 values. 
 values = np.random.normal(Mean,standard_deviation,number_of_values)
 
 # Plot histogram
-plt.hist(values,bins = 20, alpha = 0.8, color = 'green',label = 'Normal Distribution')
+# Add bins : size of histogram,  alpha: how translucent the plot , color: state the color, label: reprentation on the legend 
+plt.hist(values,bins = 5, alpha = 0.8, color = 'green',label = 'Normal Distribution')
 
-# Add title + name x& y axis
-plt.title('Week 8 - Plot Task')
+# Add title & position to left hand side
+plt.title('Week 8 - Plot Task',loc = 'left')
+
+# Name x & y axis
 plt.xlabel('Value')
 plt.ylabel('Count')
 
 # Add gridlines + legend
 plt.grid(True)
+
+
+# Step 2 -  plot of the function  h(x)=x3 in the range 0 to 10,
+
+
+# Map x & y points. xpoints = points in range between 0-10 inclusive , y = 'xpoints' cubed.
+xpoints = np.array(range(0,11))
+ypoints = (xpoints*xpoints*xpoints)
+
+# Plot the x & y points, add 'o' marker , & lable name.
+plt.plot(xpoints,ypoints,marker = 'o', label = 'h(x)=x3')
+
+# Display Legend - shows labels
 plt.legend()
 
-# Show Data
+# Show plot
 plt.show()
-
-# plot of the function  h(x)=x3 in the range 0 to 10,
 
 
 
@@ -39,37 +58,9 @@ plt.show()
 
 # Reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
 # Reference https://campus.datacamp.com/courses/intermediate-python/matplotlib?ex=18
+# Reference https://www.w3schools.com/python/matplotlib_labels.asp
+# Reference https://www.w3schools.com/python/matplotlib_subplot.asp
+# Reference https://www.w3schools.com/python/matplotlib_markers.asp
 
 
-
-#min_salary = 20000
-#max_salary = 80000
-#number_of_entries = 10
-
-#np.random.seed(1) # this makes the random numbers are the same each time to make it eas
-
-#salaries = np.random.randint(min_salary,max_salary,number_of_entries)
-#ages = np.random.randint(21,65,number_of_entries)  # format is (low,high,iterations)
-
-#print(salaries)  for #1
-
-#6 
-
-#plt.hist(salaries)
-#plt.show()
-
-#7
-#plt.scatter(ages,salaries)
-#plt.title('Scatter Graph - Ages & Wages')
-#plt.xlabel('Ages')
-#plt.ylabel('Wages')
-
-
-#8 Add x squared
-#xpoints = np.array(range(1,101))
-#ypoints = xpoints * xpoints
-#plt.plot(xpoints, ypoints, color = 'pink',label = 'x squared')
-#plt.legend()
-#plt.show()
-#plt.savefig('prettier-plot.png')
 
